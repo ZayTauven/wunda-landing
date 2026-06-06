@@ -18,35 +18,35 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Suivi en temps réel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Visualisez l'avancement des chantiers grâce à des mises à jour régulières, photos et rapports de terrain.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Identités vérifiées",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Chaque porteur de projet et contributeur passe par un processus de validation pour garantir l'intégrité du réseau.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Validation locale",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Les réalisations sont confirmées par des tiers de confiance sur place avant la clôture de l'initiative.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Traçabilité",
+  "Transparence",
+  "Impact Mesuré",
+  "Confiance",
+  "Action Collective",
+  "Visibilité",
+  "Souveraineté",
+  "Engagement",
+  "Résultats",
 ];
 
 export const Features = () => {
@@ -56,9 +56,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        L'infrastructure de{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          votre confiance
         </span>
       </h2>
 
@@ -97,3 +97,4 @@ export const Features = () => {
     </section>
   );
 };
+

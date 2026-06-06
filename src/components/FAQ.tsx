@@ -13,33 +13,28 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "Comment Wunda garantit-il la traçabilité des fonds ?",
+    answer: "Chaque contribution est enregistrée et liée à une étape précise d'un chantier. Les factures et rapports de dépenses sont publics et consultables en temps réel par tous les contributeurs de l'initiative.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    question: "Qui valide la fin des travaux sur place ?",
+    answer: "La validation est double : elle est effectuée par le porteur de projet avec preuve visuelle (photos/vidéos) et confirmée par un tiers de confiance local ou une autorité villageoise indépendante.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+    question: "Peut-on lancer une initiative sans être aux Comores ?",
+    answer: "Oui, l'initiative peut être lancée par la diaspora. Cependant, elle doit impérativement être connectée à un relais local vérifié qui sera responsable du suivi opérationnel sur le terrain.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Qu'advient-il si le budget n'est pas totalement atteint ?",
+    answer: "Chaque initiative définit un seuil de viabilité. Si ce seuil n'est pas atteint, les contributions sont soit remboursées, soit réaffectées à une autre initiative similaire, selon le choix du contributeur.",
     value: "item-4",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    question: "Comment sont sélectionnés les porteurs de projets ?",
+    answer: "Les porteurs de projets passent par une vérification d'identité et un audit de leur historique de réalisations. Le système de réputation Wunda met en avant ceux qui ont déjà prouvé leur efficacité.",
     value: "item-5",
   },
 ];
@@ -51,9 +46,9 @@ export const FAQ = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Frequently Asked{" "}
+        Questions{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Questions
+          Fréquentes
         </span>
       </h2>
 
@@ -77,15 +72,16 @@ export const FAQ = () => {
       </Accordion>
 
       <h3 className="font-medium mt-4">
-        Still have questions?{" "}
+        Encore des interrogations ?{" "}
         <a
           rel="noreferrer noopener"
           href="#"
           className="text-primary transition-all border-primary hover:border-b-2"
         >
-          Contact us
+          Contactez-nous
         </a>
       </h3>
     </section>
   );
 };
+

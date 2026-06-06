@@ -13,13 +13,13 @@ export const Newsletter = () => {
 
       <div className="container py-24 sm:py-32">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
-          Join Our Daily{" "}
+          Restez informé des{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Newsletter
+            initiatives
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+          Suivez l'impact de l'action collective et recevez les mises à jour des chantiers.
         </p>
 
         <form
@@ -27,11 +27,11 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="leomirandadev@gmail.com"
+            placeholder="votre@email.com"
             className="bg-muted/50 dark:bg-muted/80 "
             aria-label="email"
           />
-          <Button>Subscribe</Button>
+          <Button>Rejoindre la mobilisation</Button>
         </form>
       </div>
 
@@ -39,3 +39,4 @@ export const Newsletter = () => {
     </section>
   );
 };
+

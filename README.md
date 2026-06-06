@@ -1,52 +1,101 @@
-# Shadcn/UI Landing Page Template
+# 🌊 Wunda — Landing Page
 
-## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+> Page d'accueil et marketing pour Wunda.
 
-![shadch-landing-page](https://github.com/leoMirandaa/shadcn-landing-page/assets/61714687/3ba7b51f-9589-4541-800a-5ab7cecad1b5)
+Cette application présente Wunda à la diaspora comorienne : vision, fonctionnalités, impact, et appel à l'action.
 
-Build your React landing page effortlessly with the required sections to your project. <a href="https://shadcn-landing-page.vercel.app/" target="_blank">Live Demo</a>
+## Stack
 
-## Sections
+- **Vite** (dev server + build)
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui** (composants)
 
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] About
-- [x] Stats
-- [x] How It Works
-- [x] Features
-- [x] Services
-- [x] Call-to-Action (CTA)
-- [x] Testimonials
-- [x] Team
-- [x] Pricing
-- [x] Newsletter
-- [x] Frequently Asked Questions(FAQ)
-- [x] Footer
+## Structure
 
-## Features
-
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
-- [x] Meta tags
-
-## How to install
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/leoMirandaa/shadcn-landing-page.git
+```
+src/
+├── components/
+│   ├── Hero.tsx          # Section headline
+│   ├── Features.tsx      # Piliers de Wunda
+│   ├── HowItWorks.tsx    # Workflow utilisateur
+│   ├── Stats.tsx         # Métriques
+│   ├── Testimonials.tsx  # Témoignages contributeurs
+│   ├── CTA.tsx           # Call-to-action principal
+│   ├── Footer.tsx
+│   └── ui/               # shadcn/ui components
+├── App.tsx
+└── index.css
 ```
 
-2. Go into project
+## Démarrage
 
 ```bash
-cd shadcn-landing-page
+npm install
+npm run dev
 ```
 
-3. Install dependencies
+Visite **http://localhost:5173**
+
+## Build
+
+```bash
+npm run build
+# Résultat : dist/
+```
+
+## Design tokens
+
+Utilise les couleurs Wunda :
+
+```typescript
+const COLORS = {
+  wundaBlue: "#1B3F6E", // Primaire
+  wundaGold: "#C69C2E", // Accent
+  lightBg: "#FAFAF8", // Background
+};
+```
+
+## Sections clés
+
+### Hero
+
+- Headline : "La où l'action collective devient vérifiable"
+- Tagline : "Contribuez à vos localités d'origine, chaque franc traçable"
+- CTA : "Commencer" (vers app web) + "En savoir plus"
+
+### Features (4 piliers)
+
+1. **Visibilité** — Voir exactement où vont les fonds
+2. **Transparence** — Vérifier les réalisations en temps réel
+3. **Validation** — Double signature (Agent + Chef)
+4. **Gouvernance locale** — Le pouvoir aux chefs de localités
+
+### How It Works
+
+- Contributeur : crée un compte, cherche une localité, propose contribution
+- Porteur : crée une initiative, découpe en tâches, ajoute preuves
+- Agent : vérifie réalisation terrain
+- Chef : valide officiellement, fonds libérés
+
+### Social Proof
+
+- Chiffres : "450k€ mobilisés", "12 initiatives actives", "1200+ contributeurs"
+- Témoignages contributeurs réels (si disponibles)
+
+### Footer
+
+- Liens : Initiatives, FAQ, Contact
+- Localités partenaires
+- Social links
+
+## Points d'attention
+
+1. **Pas de jargon fintech** — parle de "contribution", pas de "donation" ou "crowdfunding"
+2. **Géographique** — mentionne les Comores, la diaspora
+3. **Traçabilité** — montre le journey d'un franc du début à la fin
+4. **Autorité locale** — souligne le rôle des Chefs
 
 ```bash
 npm install

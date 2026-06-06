@@ -10,22 +10,26 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center gap-2"
           >
             <LogoIcon />
-            ShadcnUI/React
+            Wunda
           </a>
+          <p className="mt-4 text-muted-foreground">
+            L'infrastructure de l'action collective pour la diaspora comorienne. 
+            Rendre le développement local fluide, sûr et visible.
+          </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Suivez-nous</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              Facebook
             </a>
           </div>
 
@@ -35,7 +39,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
 
@@ -45,86 +49,86 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              WhatsApp
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">Plateforme</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#initiatives"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              Initiatives
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#suivi"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              Suivi
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
+              href="#vision"
+              className="opacity-60 hover:opacity-100"
+            >
+              Vision
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Aide</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
               href="#"
+              className="opacity-60 hover:opacity-100"
+            >
+              Contact
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#faq"
               className="opacity-60 hover:opacity-100"
             >
               FAQ
             </a>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Guide Porteur
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Communauté</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#"
+              className="opacity-60 hover:opacity-100"
+            >
+              Devenir Relais
             </a>
           </div>
 
@@ -137,30 +141,12 @@ export const Footer = () => {
               Discord
             </a>
           </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
-          </div>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
+        <h3 className="text-muted-foreground">
+          &copy; 2026 Wunda. Vers une action collective souveraine.
         </h3>
       </section>
     </footer>

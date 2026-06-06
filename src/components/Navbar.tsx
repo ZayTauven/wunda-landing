@@ -25,16 +25,16 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#initiatives",
+    label: "Initiatives",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#suivi",
+    label: "Suivi",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#vision",
+    label: "Vision",
   },
   {
     href: "#faq",
@@ -52,10 +52,10 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ml-2 font-bold text-xl flex items-center gap-2"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Wunda
             </a>
           </NavigationMenuItem>
 
@@ -79,7 +79,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Wunda
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -96,14 +96,12 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
+                    href="#lancer"
+                    className={`w-full ${buttonVariants({
+                      variant: "default",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    Lancer une initiative
                   </a>
                 </nav>
               </SheetContent>
@@ -129,12 +127,10 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
+              href="#lancer"
+              className={`border ${buttonVariants({ variant: "default" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              Lancer une initiative
             </a>
 
             <ModeToggle />
@@ -144,3 +140,4 @@ export const Navbar = () => {
     </header>
   );
 };
+

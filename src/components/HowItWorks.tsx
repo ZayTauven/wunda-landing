@@ -10,46 +10,44 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "1. Initier",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Un projet local est proposé avec des objectifs clairs et des besoins identifiés par le terrain.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "2. Mobiliser",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "La diaspora contribue, suit l'évolution et participe activement au succès de l'initiative.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "3. Réaliser",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Les avancées sont visibles, documentées et vérifiables. L'impact est immédiat et partagé.",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "4. Impacter",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Le projet est clôturé avec un bilan complet, renforçant la réputation du porteur local.",
   },
 ];
 
 export const HowItWorks = () => {
   return (
     <section
-      id="howItWorks"
+      id="suivi"
       className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Comment ça{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          marche ?{" "}
         </span>
-        Step-by-Step Guide
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Une structure claire pour transformer l'intention en action collective souveraine.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -71,3 +69,4 @@ export const HowItWorks = () => {
     </section>
   );
 };
+

@@ -26,48 +26,45 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Soutien",
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Suivez les initiatives, recevez les alertes et participez à la discussion sans engagement financier.",
+    buttonText: "Rejoindre gratuitement",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Suivi des chantiers",
+      "Commentaires publics",
+      "Alertes localités",
+      "Historique public",
     ],
   },
   {
-    title: "Premium",
+    title: "Contributeur",
     popular: 1,
-    price: 5,
+    price: 15,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Propulsez les initiatives locales avec des contributions directes et tracées sur le terrain.",
+    buttonText: "Démarrer l'action",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Tous les avantages Soutien",
+      "Badge Profil Vérifié",
+      "Accès aux justificatifs",
+      "Vote sur les jalons",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Partenaire",
     popular: 0,
-    price: 40,
+    price: 150,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Accompagnez plusieurs initiatives et bénéficiez d'une visibilité institutionnelle sur la plateforme.",
+    buttonText: "Contacter l'équipe",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Tous les avantages Contributeur",
+      "Rapports d'impact trimestriels",
+      "Support prioritaire",
+      "Visibilité logo partenaires",
     ],
   },
 ];
@@ -79,42 +76,39 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Modèle de{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          {" "}
-          Unlimited{" "}
+          Contribution{" "}
         </span>
-        Access
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Pas de frais cachés. Chaque centime est dédié à l'impact sur le terrain.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
             className={
-              pricing.popular === PopularPlanType.YES
-                ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
+              pricing.popular === 1
+                ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary"
                 : ""
             }
           >
             <CardHeader>
               <CardTitle className="flex item-center justify-between">
                 {pricing.title}
-                {pricing.popular === PopularPlanType.YES ? (
+                {pricing.popular === 1 ? (
                   <Badge
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    Populaire
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">€{pricing.price}</span>
+                <span className="text-muted-foreground"> /mois</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

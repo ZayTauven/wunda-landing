@@ -17,45 +17,45 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    name: "Ahmed S.",
+    userName: "@ahmed_diaspora",
+    comment: "Enfin une plateforme qui me permet de voir où va mon argent pour le village. La traçabilité est exemplaire.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    name: "Dr. Mariam",
+    userName: "@mariam_health",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "Le suivi du chantier du centre de santé est fluide. Les photos envoyées par le relais local nous rassurent tous.",
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
+    name: "Mohamed J.",
+    userName: "@mo_initiatives",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "Wunda a transformé ma façon de contribuer. Plus besoin de passer des dizaines de coups de fil pour vérifier l'avancement.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    name: "Fatim M.",
+    userName: "@fatim_m",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "La validation par des tiers de confiance locaux change tout. On sait que ce qui est annoncé est réellement fait.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    name: "Hassani K.",
+    userName: "@hassani_k",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "En tant que porteur local, Wunda me donne la crédibilité nécessaire pour mobiliser mes proches à l'étranger.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    name: "Leila A.",
+    userName: "@leila_a",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "C'est l'outil qui manquait à la diaspora. Simple, efficace et surtout transparent.",
   },
 ];
 
@@ -66,17 +66,14 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        Ils font vivre{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          {" "}
-          People Love{" "}
+          l'action collective{" "}
         </span>
-        This Landing Page
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Découvrez les retours de ceux qui utilisent Wunda pour transformer leur volonté en impact durable.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
