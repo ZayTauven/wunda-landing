@@ -33,7 +33,10 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
 
-        <CardContent>"Grâce à la diaspora, notre école est réhabilitée. Tout le processus était clair."</CardContent>
+        <CardContent>
+          "Grâce à la diaspora, notre école est réhabilitée. Tout le processus
+          était clair."
+        </CardContent>
       </Card>
 
       {/* Team */}
@@ -52,7 +55,8 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-            "J'ai enfin une vue directe sur l'impact de mon action pour mon village natal."
+            "J'ai enfin une vue directe sur l'impact de mon action pour mon
+            village natal."
           </p>
         </CardContent>
 
@@ -66,14 +70,11 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[200px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Chantier #204
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
+            <Badge variant="secondary" className="text-sm text-primary">
               En cours
             </Badge>
           </CardTitle>
@@ -97,14 +98,11 @@ export const HeroCards = () => {
           <div className="space-y-4">
             {["Grande Comore", "45 Contributeurs", "Livraison Juin 2026"].map(
               (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
+                <span key={benefit} className="flex">
                   <Check className="text-green-500" />{" "}
                   <h3 className="ml-2">{benefit}</h3>
                 </span>
-              )
+              ),
             )}
           </div>
         </CardFooter>
@@ -124,7 +122,6 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
       </Card>
-
     </div>
   );
 };
