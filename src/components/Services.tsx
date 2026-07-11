@@ -10,22 +10,22 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Double validation terrain",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <ChartIcon />,
+      "Un Agent vérifie chaque tâche sur place, puis le Chef de localité la valide officiellement. Deux regards indépendants avant tout déblocage.",
+    icon: <MagnifierIcon />,
   },
   {
-    title: "Project Management",
+    title: "Fonds libérés par palier",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Aucun versement global : les fonds sont libérés palier par palier, uniquement quand toutes les tâches du palier sont validées.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Preuves immuables",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <MagnifierIcon />,
+      "Photos, documents et actes de validation sont horodatés et infalsifiables. Rien ne peut être supprimé du registre.",
+    icon: <ChartIcon />,
   },
 ];
 
@@ -36,14 +36,14 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Des garanties{" "}
             </span>
-            Services
+            structurelles
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            La confiance ne se décrète pas : elle est inscrite dans la
+            mécanique même de la plateforme.
           </p>
 
           <div className="flex flex-col gap-8">
@@ -68,7 +68,7 @@ export const Services = () => {
         <img
           src={growth}
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="About services"
+          alt="Garanties de la plateforme"
         />
       </div>
     </section>

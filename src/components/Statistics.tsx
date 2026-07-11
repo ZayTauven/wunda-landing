@@ -1,25 +1,34 @@
+import { useEffect, useState } from "react";
+import { getPublicStats, fmtKMF, type PublicStats } from "@/lib/wundaApi";
+
 export const Statistics = () => {
   interface statsProps {
     quantity: string;
     description: string;
   }
 
+  const [live, setLive] = useState<PublicStats | null>(null);
+
+  useEffect(() => {
+    getPublicStats().then(setLive).catch(() => {});
+  }, []);
+
   const stats: statsProps[] = [
     {
-      quantity: "450K€",
+      quantity: live ? fmtKMF(live.contributions_total) : "—",
       description: "Fonds tracés",
     },
     {
-      quantity: "12",
+      quantity: live ? String(live.initiatives_total) : "—",
       description: "Initiatives",
     },
     {
-      quantity: "1.2K",
+      quantity: live ? String(live.contributors_count) : "—",
       description: "Contributeurs",
     },
     {
-      quantity: "95%",
-      description: "Réalisation",
+      quantity: live ? String(live.localities_count) : "—",
+      description: "Localités",
     },
   ];
 
@@ -39,4 +48,3 @@ export const Statistics = () => {
     </section>
   );
 };
-

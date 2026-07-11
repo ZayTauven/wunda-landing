@@ -1,4 +1,5 @@
-import { LogoIcon } from "./Icons";
+import { Link } from "react-router-dom";
+import { WundaLogo } from "./Navbar";
 
 export const Footer = () => {
   return (
@@ -7,16 +8,11 @@ export const Footer = () => {
 
       <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div className="col-span-full xl:col-span-2">
-          <a
-            rel="noreferrer noopener"
-            href="/"
-            className="font-bold text-xl flex items-center gap-2"
-          >
-            <LogoIcon />
-            Wunda
-          </a>
+          <Link to="/" className="flex items-center">
+            <WundaLogo className="h-10" />
+          </Link>
           <p className="mt-4 text-muted-foreground">
-            L'infrastructure de l'action collective pour la diaspora comorienne. 
+            L'infrastructure de l'action collective pour la diaspora comorienne.
             Rendre le développement local fluide, sûr et visible.
           </p>
         </div>
@@ -57,33 +53,21 @@ export const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Plateforme</h3>
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#initiatives"
-              className="opacity-60 hover:opacity-100"
-            >
+            <Link to="/initiatives" className="opacity-60 hover:opacity-100">
               Initiatives
-            </a>
+            </Link>
           </div>
 
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#suivi"
-              className="opacity-60 hover:opacity-100"
-            >
-              Suivi
-            </a>
+            <Link to="/#suivi" className="opacity-60 hover:opacity-100">
+              Suivi public
+            </Link>
           </div>
 
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#vision"
-              className="opacity-60 hover:opacity-100"
-            >
+            <Link to="/#vision" className="opacity-60 hover:opacity-100">
               Vision
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -100,28 +84,26 @@ export const Footer = () => {
           </div>
 
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#faq"
-              className="opacity-60 hover:opacity-100"
-            >
+            <Link to="/#faq" className="opacity-60 hover:opacity-100">
               FAQ
-            </a>
+            </Link>
           </div>
 
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
+            <Link to="/#lancer" className="opacity-60 hover:opacity-100">
               Guide Porteur
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Communauté</h3>
+          <div>
+            <Link to="/#team" className="opacity-60 hover:opacity-100">
+              Gouvernance locale
+            </Link>
+          </div>
+
           <div>
             <a
               rel="noreferrer noopener"
@@ -129,16 +111,6 @@ export const Footer = () => {
               className="opacity-60 hover:opacity-100"
             >
               Devenir Relais
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
             </a>
           </div>
         </div>
